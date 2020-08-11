@@ -1,12 +1,13 @@
 import Nav from '../components/nav'
-
+ 
 export default function IndexPage() {
+  const isHome = true
   return (
     <div>
-      <Nav />
-      <div className="py-20">
-        <h1 className="text-5xl text-center text-accent-1">
-          Next.js + Tailwind CSS
+      <Nav isHome={isHome}/>
+      <div className="py-20 w-auto max-w-md">
+        <h1 className="text-4xl text-left text-accent-1 ml-10 tracking-widest cursor-default ">
+          Hello, I'm Calum.
         </h1>
       </div>
     </div>
